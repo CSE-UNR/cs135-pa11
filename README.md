@@ -1,35 +1,22 @@
-# ProgrammingAssignment9
+# ProgrammingAssignment10 DESIGN
 
 ## Project Goals
 The goal of this project is to:
-1. Familiarize students with the use of **strings**
-### Important Notes:
-1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
-2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```strings.c```
-## Program
-Use of the string library is not allowed in this class, so let's build our own! Common string functions include finding the length of a string, copying one string over to another, swapping the contents of two strings with each other, and "concatenating" or adding one string to the end of the other. Your program should implement each of these.  
+1. Be the culmination of concepts learned throughout the entire semester
+2. Allow students to develop teamwork skills
+## Program  
+Bombs away! We'll be building a minesweeper game for our final project.
 
 ## Requirements
-In addition to the main function, there should be 5 additional functions. Some functions may call other functions to make accomplishing tasks easier.  
+Create a design document detailing how you would break the problem down. Your document should include the data you will need to save and the algorithm for the game.  It should also list each function you plan to create: the input, output, and a description of how it will perform its task.
 
 ### The example executable:
 An example executable is provided in this repository. You should be able to run it from your project folder.
-If you encounter a "permission denied" error when attempting to run the executable, type ```chmod u+x stringsExecutable``` into the terminal and try running the executable again.
+If you encounter a "permission denied" error when attempting to run the executable, type ```chmod u+x minesweeperExecutable``` into the terminal and try running the executable again.
 
 ## Submission details
-To submit your project, you will have to use git on your VirtualBox installation:
-1.	After accepting the assignment invitation, copy the clone URL
-2.	Type 
-```git clone clone_URL```
-3.	cd into your new assignment directory
-4.	After working on your files
-5.	When you’re ready, type the following commands: 
-```
-git add .
-git commit -m “a descriptive message!”
-git push
-```
+To submit your project, upload a document to the assignment in WebCampus.  
+
 ## Academic Honesty
 Academic dishonesty is against university as well as the system community standards. Academic dishonesty includes, but is not limited to, the following:
 Plagiarism: defined as submitting the language, ideas, thoughts or work of another as one's own; or assisting in the act of plagiarism by allowing one's work to be used in this fashion.
