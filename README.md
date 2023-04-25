@@ -3,18 +3,32 @@
 ## Project Goals
 The goal of this project is to:
 1. Familiarize students with the use of **strings**
+2. Write functions necessary for the **Final Project**
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```strings.c```
 ## Program
-Use of the string library is not allowed in this class, so let's build our own! Common string functions include finding the length of a string, copying one string over to another, and comparing strings to each other. Your program should implement each of these and a function to load two strings from the ```words.txt``` file.  
+Use of the string library is not allowed in this class, so let's build our own! Common string functions include finding the length of a string, copying one string over to another, swapping strings, and comparing strings to each other. Your program should implement each of these and a function to load two strings from the ```words.txt``` file.  
 
 ## Requirements
-In addition to the main function, there should be 4 additional functions. Some functions may call other functions to make accomplishing tasks easier.  
+In addition to the main function, there should be 5 additional functions. Some functions may call other functions to make accomplishing tasks easier.  
+**DO NOT** change the .c file name, the main function, or the function prototypes. Your task is simply to *provide the code inside of the existing function definitions*.  
 
 ### The driver:
-An driver with function prototypes and calls is alreday provided in this repository. Add your function definitions to this file.
+An driver with function prototypes and calls is alreday provided in this repository. Complete the function definitions in this file.
+
+***loadTwoStrings*** should save each line from the file into a separate string
+
+*****stringLength***** should return the length of a given string
+
+***stringCopy*** should copy the source string into the destinationn string so that they're both the same
+
+***stringSwap*** should overwrite each string with the other string so that they "swap places"
+
+***stringCompare*** should indicate whether the strings are the same according to the rules below.
+>0	  - They compare equal.  
+><0	 - Either the value of the first character that does not match is lower in the compared string, or all compared characters match but the compared string is shorter.  
+>\>0	- Either the value of the first character that does not match is greater in the compared string, or all compared characters match but the compared string is longer.  
 
 ## Submission details
 To submit your project, you will have to use git on your VirtualBox installation:
