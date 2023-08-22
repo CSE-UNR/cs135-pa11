@@ -1,37 +1,41 @@
-# ProgrammingAssignment10 Checkpoint 1
+# Final Group Project
 
 ## Project Goals
 The goal of this project is to:
-1. Familiarize students with the use of **strings**
-2. Write functions necessary for the **Final Project**
+1. Serve as a culmination of skills learned throughout the semester.
 ### Important Notes:
-1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
+1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be verifying your code compiles.
 2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
+3.	**Filename**: Save your program as ```connect4.c```
 ## Program
-Use of the string library is not allowed in this class, so let's build our own! Common string functions include finding the length of a string, copying one string over to another, swapping strings, and comparing strings to each other. Your program should implement each of these and a function to load two strings from the ```words.txt``` file.  
+Time to connect all the concepts together!
+
+Write a program that will allow the user to play a simplified version of Connect 4. You can find an overview of the official rules here: https://www.gamesver.com/the-rules-of-connect-4-according-to-m-bradley-hasbro/.
+
+### Game Play
+- A menu should be displayed which provides the user some options. The user may play a game, load an existing game (from a file), or exit the program.
+- If the user chooses to play the game, they should first be prompted to enter their name and their opponent’s name. Those names will be used during game play. The players are then informed which pieces represent them.
+- Each player should take turns making their moves until the game is won or ends in a tie. Then the user should be taken back to the menu. 
 
 ## Requirements
-In addition to the main function, there should be 5 additional functions. Some functions may call other functions to make accomplishing tasks easier.  
-**DO NOT** change the .c file name, the main function, or the function prototypes. Your task is simply to *provide the code inside of the existing function definitions*.  
+-  A minimum of 5 functions must be included (I recommended more!)
+-  A game can be loaded from a ```saved_game.txt``` file
+-  You may only use the stdio.h and stdbool.h libraries
 
-### The driver:
-An driver with function prototypes and calls is alreday provided in this repository. Complete the function definitions in this file.
+### Extra Credit
+#### Features will **ONLY** be considered for extra credit if the required functionality is completely implemented.  
+(10%) Allow the user to quit and save in the middle of a game. That will be the game loaded the next time the user chooses that option.
 
-***loadTwoStrings*** should save each line from the file into a separate string
-
-*****stringLength***** should return the length of a given string
-
-***stringCopy*** should copy the source string into the destinationn string so that they're both the same
-
-***stringSwap*** should overwrite each string with the other string so that they "swap places"
-
-***stringCompare*** should indicate whether the strings are the same according to the rules below.
->0	  - They compare equal.  
-><0	 - Either the value of the first character that does not match is lower in the compared string, or all compared characters match but the compared string is shorter.  
->\>0	- Either the value of the first character that does not match is greater in the compared string, or all compared characters match but the compared string is longer.  
+## Example Program Execution
+### An example executable is provided in this repository.
+- You should be able to run it from your project folder in a Linux environment. 
+- If you encounter a “permission denied” error when attempting to run the executable, type  
+```chmod u+x connect4Executable```  
+into the terminal and try running the executable again.
+- There is alreday a file in the repository for a saved game.
 
 ## Submission details
-To submit your project, you will have to use git on your VirtualBox installation:
+To submit your project, you should use git in your Linux environment:
 1.	After accepting the assignment invitation, copy the clone URL
 2.	Type 
 ```git clone clone_URL```
